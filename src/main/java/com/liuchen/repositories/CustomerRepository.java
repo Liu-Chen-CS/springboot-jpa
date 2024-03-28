@@ -1,10 +1,7 @@
-package com.liuchen.springbootjpa.repositories;
-
-import com.liuchen.springbootjpa.pojo.Customer;
+package com.liuchen.repositories;
+import com.liuchen.pojo.Customer;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.data.repository.CrudRepository;
 
 /**
  * Package: com.liuchen.springbootjpa.repositories

@@ -1,7 +1,6 @@
-package com.liuchen.springbootjpa.services;
+package com.liuchen.services;
 
-import com.liuchen.springbootjpa.pojo.Customer;
-import org.springframework.stereotype.Service;
+import com.liuchen.pojo.Customer;
 
 /**
  * Package: com.liuchen.springbootjpa.services

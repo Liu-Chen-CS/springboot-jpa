@@ -1,4 +1,4 @@
-package com.liuchen.springbootjpa.pojo;
+package com.liuchen.pojo;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

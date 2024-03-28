@@ -1,7 +1,7 @@
-package com.liuchen.springbootjpa.controllers;
+package com.liuchen.controllers;
 
-import com.liuchen.springbootjpa.pojo.Customer;
-import com.liuchen.springbootjpa.services.CustomerService;
+import com.liuchen.pojo.Customer;
+import com.liuchen.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,4 +26,5 @@ public class CustomerController {
     public Iterable<Customer> get(){
         return customerService.get();
     }
+
 }

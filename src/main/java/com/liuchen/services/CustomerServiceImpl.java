@@ -1,7 +1,7 @@
-package com.liuchen.springbootjpa.services;
+package com.liuchen.services;
 
-import com.liuchen.springbootjpa.pojo.Customer;
-import com.liuchen.springbootjpa.repositories.CustomerRepository;
+import com.liuchen.pojo.Customer;
+import com.liuchen.repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
