@@ -5,6 +5,8 @@ import com.liuchen.repositories.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 /**
  * Package: com.liuchen.springbootjpa.services
  * Description:
@@ -21,8 +23,8 @@ public class CustomerServiceImpl implements CustomerService{
     CustomerRepository customerRepository;
 
     @Override
-    public Iterable<Customer> get() {
-        return customerRepository.findAll();
+    public Optional<Customer> get() {
+        return customerRepository.findById(2L);
     }
 
 }

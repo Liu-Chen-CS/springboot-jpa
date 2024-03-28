@@ -2,6 +2,8 @@ package com.liuchen.services;
 
 import com.liuchen.pojo.Customer;
 
+import java.util.Optional;
+
 /**
  * Package: com.liuchen.springbootjpa.services
  * Description:
@@ -13,6 +15,6 @@ import com.liuchen.pojo.Customer;
 
 public interface CustomerService {
 
-    Iterable<Customer> get();
+    Optional<Customer> get();
 
 }
