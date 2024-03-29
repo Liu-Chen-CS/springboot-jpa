@@ -5,7 +5,9 @@ import com.liuchen.repositories.CustomerRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @SpringBootTest
@@ -43,6 +45,23 @@ class SpringDataJpaApplicationTests {
     @Test
     void test_04(){
         customerRepository.deleteById(11L);
+    }
+
+    @Test
+    void test_05(){
+        System.out.println(customerRepository.findCustomerByCustomerName("Brack Obama"));
+    }
+
+    @Test
+    void test_06(){
+        int i = customerRepository.deleteByCustomerID(14L);
+        System.out.println(i);
+    }
+
+    @Test
+    void test_07(){
+        List<Customer> list = customerRepository.findCustomerByCustomerNameLike("d%");
+        System.out.println(list);
     }
 
 }
